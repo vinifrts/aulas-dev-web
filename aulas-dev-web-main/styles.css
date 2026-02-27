@@ -270,7 +270,7 @@ h2 {
   font-family: var(--fonte-titulo);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--azul-escuro);
+  color: var(--azul-medio);
   cursor: pointer;
   transition: color var(--transicao), transform var(--transicao);
   margin-bottom: 16px;
