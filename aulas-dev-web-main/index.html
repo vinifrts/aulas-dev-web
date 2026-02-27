@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade de desenvolvimento web do carnaval</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade de desenvolvimento web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .paragrafo1 { 
+      font-weight: 600; 
+      color: var(--cinza-texto);}
+  </style>
 </head>
 <body>
 
-    <h1 id="titulo-principal">Universidade de Fortaleza</h1>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="nav-brand-uni">UNI</span><span class="nav-brand-for">FOR</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#importancia" class="nav-link">Importância</a></li>
+        <li><a href="#computacao" class="nav-link">Computação</a></li>
+        <li><a href="#logo-section" class="nav-link">Logo</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section>
-        <h2 class="animar">O que é a Unifor?</h2>
-        <p class="paragrafo1" style="color: black;">
-            Unifor é uma abreviação para o nome Universidade de Fortaleza,
-            ela conta com laboratórios de ultima geração e professores da mais alta
-            prateleira, incluindo o professor Francisco Estevão.
-        </p>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bem-vindo à</p>
+      <h1 id="titulo-principal">Universidade<br>de Fortaleza</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">Excelência acadêmica, inovação e transformação humana</p>
+    </div>
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </header>
 
-        <h3 class="animar">Importância da Unifor</h3>
-        <p class="paragrafo2">
-            A  Unifor não existe somente para ensinar conteudo, serve pra formar os
-            roteiristas do futuro, as pessoas que vao cuidar do rumo da humanidade.
-        </p>
+  <main class="main-content">
 
-        <h3 class="animar">Ciencia da Computação</h3>
-        <p class= "paragrafo3">
-            O curso de ciencia da computação conta com laboratorios de altissima
-            qualidade, com profissionais capacitados e dispostos a ajudar e ensinar
-            da melhor maneira possivel
-        </p>
+    <section id="sobre" class="card">
+      <div class="card-accent"></div>
+      <h2 class="animar">O que é a Unifor?</h2>
+      <p class="paragrafo1">
+        Unifor é uma abreviação para o nome Universidade de Fortaleza. Ela conta com laboratórios de última geração
+        e professores da mais alta prateleira, incluindo o professor Francisco Estevão.
+      </p>
     </section>
 
-    <div class="area-logo">
-    <p class="mensagemBotao" id="mensagem">
-        Clique no botão para ver a logo
-    </p>
+    <section id="importancia" class="card">
+      <div class="card-accent"></div>
+      <h3 class="animar">Importância da Unifor</h3>
+      <p class="paragrafo2">
+        A Unifor não existe somente para ensinar conteúdo; serve para formar os protagonistas do futuro —
+        as pessoas que vão cuidar do rumo da humanidade.
+      </p>
+    </section>
 
-<button id="botaoLogo">Mostrar Logo</button>
+    <section id="computacao" class="card">
+      <div class="card-accent"></div>
+      <h3 class="animar">Ciência da Computação</h3>
+      <p class="paragrafo3">
+        O curso de Ciência da Computação conta com laboratórios de altíssima qualidade, com profissionais
+        capacitados e dispostos a ajudar e ensinar da melhor maneira possível.
+      </p>
+    </section>
 
-
-    <img src="Universidade-de-Fortaleza-UNIFOR-LOGO.png"
-         alt="Logo da unifor"
-         id="logo"
-         class="logo-unifor">
-
+    <div id="logo-section" class="area-logo">
+      <p class="mensagemBotao" id="mensagem">Clique no botão para ver a logo</p>
+      <button id="botaoLogo">Mostrar Logo</button>
+      <img src="Universidade-de-Fortaleza-UNIFOR-LOGO.png" alt="Logo da Unifor" id="logo" class="logo-unifor">
     </div>
-<script src="script.js">
-</script>
+
+  </main>
+
+  <footer id="rodape">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-brand-uni">UNI</span><span class="nav-brand-for">FOR</span>
+      </div>
+      <p class="footer-text">Universidade de Fortaleza &mdash; Av. Washington Soares, 1321 &mdash; Fortaleza, CE</p>
+      <p class="footer-copy">&copy; 2026 Unifor &middot; Atividade de Desenvolvimento Web</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
