@@ -249,6 +249,7 @@ body {
   border: 1px solid rgba(10,31,68,0.06);
   overflow: hidden;
   transition: transform var(--transicao), box-shadow var(--transicao);
+  font-size: 1rem;
 }
 .card:hover {
   transform: translateY(-6px);
@@ -291,6 +292,11 @@ h2::after {
 }
 h2:hover::after { width: 90px; }
 
+h2::before {
+  content: "• ";
+  color: var(--azul-claro);
+}
+
 h3 {
   font-family: var(--fonte-titulo);
   font-size: 1.45rem;
@@ -304,7 +310,10 @@ h3:hover {
   color: var(--azul-claro);
   transform: translateX(6px);
 }
-
+h3::before {
+  content: "• ";
+  color: var(--azul-claro);
+}
 
 p { line-height: 1.75; font-size: 1rem; }
 
@@ -326,6 +335,7 @@ p { line-height: 1.75; font-size: 1rem; }
   border: 1px solid rgba(10,31,68,0.06);
   gap: 24px;
   transition: transform var(--transicao), box-shadow var(--transicao);
+  font-weight: 700;
 }
 .area-logo:hover {
   transform: translateY(-4px);
